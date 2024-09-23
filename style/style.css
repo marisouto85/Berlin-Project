@@ -12,7 +12,7 @@
   --text-color: black;
   --text-color2: blue;
   --text-color3: white;
-  --button: rgb(164, 39, 202);
+  --button: red;
 }
 
 body {
@@ -128,10 +128,81 @@ h3 {
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 0.9640231092436975) 100%
   );
+  backface-visibility: visible !important;
+	animation: flip 25s ease infinite;
 }
 
+
+
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(40px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(40px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+  
+
+.extra {
+  display: none;
+}
+
+p {
+  display: inline;
+  color:var(--text-color);
+}
+
+input[type="checkbox"]{
+  height: 2em;
+  display: block;
+  appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 1em;
+  background-color: var(--button);
+  color: var(--text-color4);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-size: .3rem;
+
+}
+
+label:before {
+  content:"Read-more";
+}
+
+input[type="checkbox"]:checked ~ label:before {
+  content: "Read-less";
+}
+
+.dot:has(~input[type="checkbox"]:checked){
+  display: none;
+}
+
+.extra:has(~input[type="checkbox"]:checked){
+  display: inline;
+}
+
+/*BUTTONS*/
 .pankow button {
-  background-color: var(--buttonhover);
+  background-color: var(--button);
   color: white;
   padding: 1rem 2rem;
   margin-left: 3.5rem;
@@ -242,7 +313,7 @@ footer .nav-footer ul {
     #ffcc70 100%
   );
 }
-.nav-footer ul li a:hover {
+footer .nav-footer li:hover {
   background-color: var(--primary-color);
 }
 
@@ -329,6 +400,29 @@ footer .nav-footer ul {
     margin-left: 16rem;
     width: 30%;
   
+  }
+
+  @keyframes flip {
+    0% {
+      transform: perspective(400px) rotateY(0);
+      animation-timing-function: ease-out;
+    }
+    40% {
+      transform: perspective(400px) translateZ(20px) rotateY(170deg);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      transform: perspective(400px) translateZ(20px) rotateY(190deg) scale(1);
+      animation-timing-function: ease-in;
+    }
+    80% {
+      transform: perspective(400px) rotateY(360deg) scale(.95);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: perspective(400px) scale(1);
+      animation-timing-function: ease-in;
+    }
   }
   
 }
