@@ -321,5 +321,14 @@ footer .nav-footer ul {
       #ffcc70 100%
     );
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16rem;
+    width: 30%;
+  
+  }
   
 }
