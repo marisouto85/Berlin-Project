@@ -180,35 +180,21 @@ button:hover {
 
 /*FORM*/
 
-.comment {
+form {
   display: flex;
-  flex-direction: column;
+  flex-direction:row ;
   justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  width: 18%;
-  height: 38rem;
-  margin-left: 35rem;
-  box-shadow: var(--box-shadow);
-  gap: 1rem;
-oter {
-  padding: 1.5rem;
-  width: 98%;
-  height: 5rem;
-  margin-left: 1rem;
-  cursor: pointer;
-  box-shadow: var(--box-shadow);
-  /*border-radius: var(--border-radius);*/
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
+  margin-left: 40rem;
+  width: 20%;
+
 }
 
+.intro {
+  margin-top: 2rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-color);
+}
 textarea,
 input {
   border: var(--secondary-color);
@@ -226,7 +212,7 @@ label {
   gap: 1rem;
 }
 
-.comment button {
+.opinion button {
   background-color: var(--buttonhover);
   color: white;
   padding: 1rem 2rem;

@@ -78,11 +78,11 @@
         <div class="cards">
             <div class="pankow">
                 <img src="./images/Rathaus_Pankow.jpg" alt="Rathaus Pankow">
-                 <h3> Pankow</h3>
+                <h3> Pankow</h3>
                 <button>Read more</button>
             </div>
 
-          <div class="prenzlauer">
+            <div class="prenzlauer">
                 <img src="./images/Berlin-Prenzlauer_Berg.jpg" alt="Berlin Prenzlauer Berg">
                 <h3> Prenzlauer Berg</h3>
                 <button>Read more</button>
@@ -96,8 +96,30 @@
                 <img src="./images/Grunewald-Forst.jpg" alt="Grunewald Forst">
                 <h3> Grunewald Forst</h3>
                 <button>Read more</button>
-            </div> 
+            </div>
         </div>
+        <div class="opinion">
+            <h3 class="intro">Tell us your opinion</h3>
+            <form action="index.html" method="get">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" autocomplete="off" id="name" name="name" required>
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" autocomplete="off" name="lastValue" id="lname" value="" />
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" autocomplete="off" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" autocomplete="off" name="message" required>
+                <br>
+                <button type="submit" autocomplete="off">Send</button> 
+            </form>
+     </div>
     </main>
     <footer>
             <nav class="nav-footer"> 
