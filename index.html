@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/stlye.css">
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Berlin</title>
 </head>
 
 <body>
-
-
     <header>
 
         <div class="header">
@@ -36,7 +37,7 @@
     <main>
         <div class="information">
 
-            <h1>Welcome to Berlin</h1>
+            <h1>Welcome to Berlin </h1>
 
             <h2><span>Did you know....?</span></h2>
 
@@ -76,13 +77,12 @@
         </div>
         <div class="cards">
             <div class="pankow">
-
                 <img src="./images/Rathaus_Pankow.jpg" alt="Rathaus Pankow">
-                <h3> Pankow</h3>
+                 <h3> Pankow</h3>
                 <button>Read more</button>
             </div>
 
-            <div class="prenzlauer">
+          <div class="prenzlauer">
                 <img src="./images/Berlin-Prenzlauer_Berg.jpg" alt="Berlin Prenzlauer Berg">
                 <h3> Prenzlauer Berg</h3>
                 <button>Read more</button>
@@ -96,43 +96,18 @@
                 <img src="./images/Grunewald-Forst.jpg" alt="Grunewald Forst">
                 <h3> Grunewald Forst</h3>
                 <button>Read more</button>
-            </div>
-        </div>
-        <div class="comment">
-            <h3>Tell us your opinion</h3>
-
-            <form action="index.php" method="post">
-
-                <label for="name">Name:</label>
-                <br>
-                <input type="text" autocomplete="off" id="name" name="name" required>
-                <br>
-                <label for="lname">Last name:</label>
-                <br>
-                <input type="text" autocomplete="off" name="lastValue" id="lname" value="" />
-                <br>
-                <label for="email">Email:</label>
-                <br>
-                <input type="email" autocomplete="off" id="email" name="email" required>
-                <br>
-                <label for="message">Message:</label>
-                <br>
-                <textarea id="message" autocomplete="off" name="message" required>
-                <br>
-                <button type="submit" autocomplete="off">Send</button> 
-            </form>
+            </div> 
         </div>
     </main>
     <footer>
-                <nav>
-                    <ul>
-                        <li><a href="#">FACEBOOK</a></li>
-                        <li><a href="#">Pictures</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav class="nav-footer"> 
+            <ul>
+                <li><a href="#"></a><i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC;"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-instagram fa-2xl" style="color: #74C0FC;"></i></li>
+            </ul>
+        </nav>
     </footer>
-
 </body>
 
 </html>
