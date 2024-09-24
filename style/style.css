@@ -245,6 +245,7 @@ footer .nav-footer li:hover {
   }
 
   .logo img {
+    display: block;
     width: 100%;
     margin-left: 0.9rem;
     height: 25vh;
@@ -272,30 +273,29 @@ footer .nav-footer li:hover {
     justify-content: center;
     padding: 2rem;
   }
-
   .cards {
     display: flex;
     flex-direction: column;
     width: 10%;
     justify-content: center;
     /*margin-left: 40rem;*/
-    margin-top: 20rem;
+    margin-top: 25rem;
     gap: 1rem;
     color: var(--text-color3);
     margin-left: 12rem;
   }
 
   .text {
- 
-
-
+    width: 180%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  p {
-    display: inline-block;
-    color: var(--text-color);
+  input,
+  label {
+    margin-top: 1rem;
+    border-radius: 1rem;
   }
-  
 
   footer .nav-footer ul {
     display: flex;
