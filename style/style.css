@@ -9,6 +9,7 @@
   --border-radius: 2rem;
   --primary-color: red;
   --secondary-color: rgb(121, 113, 113);
+  --third-color: pink;
   --text-color: black;
   --text-color2: blue;
   --text-color3: white;
@@ -113,7 +114,7 @@ h3 {
   margin-left: 40rem;
   margin-top: 5rem;
   gap: 3rem;
-  color: var(--text-color3);
+  color: var(--text-color2);
 }
 
 .cards img {
@@ -129,34 +130,31 @@ h3 {
     rgba(253, 187, 45, 0.9640231092436975) 100%
   );
   backface-visibility: visible !important;
-	animation: flip 25s ease infinite;
+  animation: flip 25s ease infinite;
 }
-
-
 
 @keyframes flip {
-	0% {
-		transform: perspective(400px) rotateY(0);
-		animation-timing-function: ease-out;
-	}
-	40% {
-		transform: perspective(400px) translateZ(40px) rotateY(170deg);
-		animation-timing-function: ease-out;
-	}
-	50% {
-		transform: perspective(400px) translateZ(40px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
-	}
-	80% {
-		transform: perspective(400px) rotateY(360deg) scale(.95);
-		animation-timing-function: ease-in;
-	}
-	100% {
-		transform: perspective(400px) scale(1);
-		animation-timing-function: ease-in;
-	}
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: perspective(400px) translateZ(40px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) translateZ(40px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
 }
-  
 
 .extra {
   display: none;
@@ -164,134 +162,47 @@ h3 {
 
 p {
   display: inline;
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
-input[type="checkbox"]{
-  height: 2em;
+input[type="checkbox"] {
+  height: 0.1em;
   display: block;
   appearance: none;
 }
 
 label {
   position: relative;
-  padding: 1em;
-  background-color: var(--button);
-  color: var(--text-color4);
+  background-color: var(--third-color);
+  color: var(--text-color3);
   cursor: pointer;
   border-radius: var(--border-radius);
-  font-size: .3rem;
+  padding: 0.5rem;
+}
 
+input,
+label {
+  margin-top: 1rem;
 }
 
 label:before {
-  content:"Read-more";
+  content: "Read-more";
 }
 
 input[type="checkbox"]:checked ~ label:before {
   content: "Read-less";
 }
 
-.dot:has(~input[type="checkbox"]:checked){
+.dot:has(~ input[type="checkbox"]:checked) {
   display: none;
 }
 
-.extra:has(~input[type="checkbox"]:checked){
+.extra:has(~ input[type="checkbox"]:checked) {
   display: inline;
 }
 
-/*BUTTONS*/
-.pankow button {
-  background-color: var(--button);
-  color: white;
-  padding: 1rem 2rem;
-  margin-left: 3.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.prenzlauer button {
-  background-color: var(--buttonhover);
-  color: white;
-  padding: 1rem 2rem;
-  margin-left: 3.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: -3rem;
-}
-
-.alexanderplatz button {
-  background-color: var(--buttonhover);
-  color: white;
-  padding: 1rem 2rem;
-  margin-left: 3.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.grunewald button {
-  background-color: var(--buttonhover);
-  color: white;
-  padding: 1rem 2rem;
-  margin-left: 3.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: -1rem;
-}
-
-button:hover {
-  background-color: var(--primary-color);
-}
-
-/*FORM*/
-
-form {
-  display: flex;
-  flex-direction:row ;
-  justify-content: center;
-  margin-left: 40rem;
-  width: 20%;
-
-}
-
-.intro {
+.text {
   margin-top: 2rem;
-  padding: 3rem;
-  text-align: center;
-  color: var(--text-color);
-}
-textarea,
-input {
-  border: var(--secondary-color);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-  height: 2.5rem;
-  padding: 2rem;
-}
-
-label {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  gap: 1rem;
-}
-
-.opinion button {
-  background-color: var(--buttonhover);
-  color: white;
-  padding: 1rem 2rem;
-  margin-left: 3.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: -1rem;
 }
 
 /*FOOTER*/
@@ -303,7 +214,7 @@ footer .nav-footer ul {
   list-style: none;
   width: 98.6%;
   height: 3rem;
-  margin-left:1rem;
+  margin-left: 1rem;
   box-shadow: var(--box-shadow);
   background-color: #4158d0;
   background-image: linear-gradient(
@@ -374,6 +285,18 @@ footer .nav-footer li:hover {
     margin-left: 12rem;
   }
 
+  .text {
+ 
+
+
+  }
+
+  p {
+    display: inline-block;
+    color: var(--text-color);
+  }
+  
+
   footer .nav-footer ul {
     display: flex;
     justify-content: center;
@@ -382,7 +305,7 @@ footer .nav-footer li:hover {
     list-style: none;
     width: 98.6%;
     height: 3rem;
-    margin-left:1rem;
+    margin-left: 1rem;
     box-shadow: var(--box-shadow);
     background-color: #4158d0;
     background-image: linear-gradient(
@@ -399,7 +322,6 @@ footer .nav-footer li:hover {
     justify-content: center;
     margin-left: 16rem;
     width: 30%;
-  
   }
 
   @keyframes flip {
@@ -416,7 +338,7 @@ footer .nav-footer li:hover {
       animation-timing-function: ease-in;
     }
     80% {
-      transform: perspective(400px) rotateY(360deg) scale(.95);
+      transform: perspective(400px) rotateY(360deg) scale(0.95);
       animation-timing-function: ease-in;
     }
     100% {
@@ -424,5 +346,4 @@ footer .nav-footer li:hover {
       animation-timing-function: ease-in;
     }
   }
-  
 }
