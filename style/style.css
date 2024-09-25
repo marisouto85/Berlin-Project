@@ -268,6 +268,80 @@ footer .nav-footer ul {
   );
 }
 
+/*About*/
+
+
+
+.berlin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20rem;
+}
+
+.about img {
+
+  width: 50%;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 28rem;
+  border-radius: var(--border-radius);
+
+}
+
+p {
+  display:inline-block;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+button {
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+  width: 10%;
+  height: 3rem;
+  background-color: var(--button);
+  color: var(--text-color3);
+  
+}
+
+button a {
+  text-decoration: none;
+  color: var(--text-color3);
+}
+/*Pictures*/
+
+.allpictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  gap: 5rem;
+}
+
+.allpictures img{
+  width: 20rem;
+  height: 20rem;
+  object-fit:cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 0.9640231092436975) 100%
+  );
+
+}
+
+.allpictures img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
 /*MEDIA QUERY MOBILE*/
 
 @media screen and (max-width: 600px) {
