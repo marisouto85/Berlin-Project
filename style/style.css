@@ -89,7 +89,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   color: var(--text-color);
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   text-shadow: 1rem 1rem 1rem lightpink;
 }
 h2 {
@@ -112,8 +112,9 @@ h3 {
   width: 20%;
   justify-content: center;
   margin-left: 40rem;
-  margin-top: 5rem;
-  gap: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 5rem;
   color: var(--text-color2);
 }
 
@@ -273,6 +274,14 @@ footer .nav-footer li:hover {
     justify-content: center;
     padding: 2rem;
   }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -5rem;
+    text-shadow: 1rem 1rem 1rem lightpink;
+  }
   .cards {
     display: flex;
     flex-direction: column;
@@ -346,4 +355,99 @@ footer .nav-footer li:hover {
       animation-timing-function: ease-in;
     }
   }
+}
+
+@media screen and (max-width:601px) {
+  body {
+    background-color: whitesmoke;
+    font-family: Gowun batang;
+    padding-top: 38rem;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 110%;
+    z-index: 1000;
+  }
+
+  .logo img {
+    display: block;
+    width: 110%;
+    margin-left: 0.9rem;
+    height: 25vh;
+  }
+  .container {
+    padding: 1.5rem;
+    width: 98.6%;
+    height: 5rem;
+    box-shadow: var(--box-shadow);
+    /*border-radius: var(--border-radius);*/
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+  }
+
+  .information {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: -5rem;
+    text-shadow: 1rem 1rem 1rem lightpink;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: center;
+    /*margin-left: 40rem;*/
+    margin-top: 25rem;
+    gap: 1.5rem;
+    color: var(--text-color3);
+    margin-left: 12rem;
+  }
+
+  .text {
+    width: 180%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input,
+  label {
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+
+  footer .nav-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    list-style: none;
+    width: 98.6%;
+    height: 3rem;
+    margin-left: 1rem;
+    box-shadow: var(--box-shadow);
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+  }
+
 }
